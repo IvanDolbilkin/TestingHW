@@ -3,8 +3,14 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9]
     steps:
+     - uses: actions/checkout@v2
+     - name: Set up Python all versions
+       uses: actions/setup-python@v2
      - name: Install dependencies
-     - run: pip install -r 
+     - run: pip install -r requirements.txt
      - name: Run Test
      - run: python -m unittest discover .
