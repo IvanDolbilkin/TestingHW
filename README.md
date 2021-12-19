@@ -12,3 +12,4 @@ My first testing programm on pyton using Pytest
 * Сделайть интеграцию CI-системы и репозитория на GitHub: сделать бэйдж в README.md, который будет показывать текущий статус тестов
 * Сделать любую интеграцию CI-системы и какого-либо мессенджера. Настроить систему так, чтобы при успешном прохождении теста посылалось сообщение "все ок", при неуспешном - посылалась информация, какие именно тесты не пройдены
 # Testing Status
+![workflow](https://github.com/IvanDolbilkin/TestingHW/blob/main/.github/workflows/test.yml/badge.svg)
