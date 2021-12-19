@@ -1,0 +1,11 @@
+name: Tests
+
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Install dependencies
+     - run: pip install -r 
+     - name: Run Test
+     - run: python -m unittest discover .
