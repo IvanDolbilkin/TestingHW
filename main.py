@@ -26,7 +26,6 @@ def get_max(data):
         for i in data:
             if i > m:
                 m = i
-        m = 1
         return m
     except OverflowError:
         print("Too much data!")
